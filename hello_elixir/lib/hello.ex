@@ -59,3 +59,15 @@ multiply = &(&1 * &2)
 IO.puts multiply.(3, 3)
 
 # this is nice but strikes me as a little opaque
+
+# arrays - simple enough
+test_array = [1,2,3] ++ [4,5,6]
+IO.puts length test_array
+
+# and tuples
+test_tuple = { "A", "B", "C"}
+# grab the tail
+IO.puts elem(test_tuple, 2)
+
+
+
