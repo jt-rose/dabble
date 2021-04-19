@@ -1,3 +1,5 @@
+import First_Module
+
 test_var = "I'm a test variable"
 test_num = 50
 
@@ -42,3 +44,11 @@ triple_that = double * 3
 halve_result = triple_that / 2
 end
 IO.puts long_func.(10)
+
+# an annoying gotcha - when using locally scoped functions
+# they must be called like so: func.(arg1)
+# but imported functions are missing the period
+# example: func(arg1)
+
+
+IO.puts hello_module("imported function")
