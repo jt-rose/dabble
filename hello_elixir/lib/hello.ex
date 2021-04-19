@@ -52,3 +52,10 @@ IO.puts long_func.(10)
 
 
 IO.puts hello_module("imported function")
+
+# & can be used for function and arg shorthands:
+
+multiply = &(&1 * &2)
+IO.puts multiply.(3, 3)
+
+# this is nice but strikes me as a little opaque
