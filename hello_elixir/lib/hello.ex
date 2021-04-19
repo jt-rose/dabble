@@ -69,5 +69,10 @@ test_tuple = { "A", "B", "C"}
 # grab the tail
 IO.puts elem(test_tuple, 2)
 
+# keyword lists
+test_kl = [{:a, 1}, {:b, 2}]
+IO.puts test_kl[:b]
 
-
+# maps - preferred
+test_map = %{:a => "A", :b => "B"}
+IO.puts test_map[:a]
